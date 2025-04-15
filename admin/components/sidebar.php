@@ -72,6 +72,22 @@
             <span class="hide-menu">History Pembelian</span>
           </a>
         </li>
+        <li class="sidebar-item">
+          <a class="sidebar-link" href="scan.php" aria-expanded="false">
+            <span>
+              <i class="fas fa-qrcode  fs-6"></i>
+            </span>
+            <span class="hide-menu">Scan Ticket</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a class="sidebar-link" href="../logout.php" aria-expanded="false">
+            <span>
+              <i class="fas fa-sign-out fs-6"></i>
+            </span>
+            <span class="hide-menu">Logout </span>
+          </a>
+        </li>
 
       </ul>
     </nav>

@@ -117,20 +117,7 @@
           <div class="card">
             <div class="card-body text-center">
               <a href="index.php" class="logo-img d-block mb-3">
-              <model-viewer
-  src="assets/3D/ImageToStl.com_logologin.glb"
-  camera-controls
-  auto-rotate
-  rotation-per-second="30deg"
-  autoplay
-  shadow-intensity="1"
-  ar
-  scale="2 2 2"
-  orientation="0 1.5 0 0"
-  camera-target="0m 0.5m 0m"
-  camera-orbit="0deg 90deg 1.5m"
-  field-of-view="50deg">
-</model-viewer>
+              <img src="img/logologin.png" alt="" width="400">
               </a>
               <h3 class="mb-4">Silahkan Buat Akun</h3>
               <form action="authentication-register.php" method="POST">

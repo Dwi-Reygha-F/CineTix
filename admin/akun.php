@@ -280,7 +280,7 @@ $result = $conn->query($sql);
     <?php if (isset($registration_success) && $registration_success): ?>
     Swal.fire({
       title: 'Pendaftaran Berhasil!',
-      text: 'Anda telah berhasil mendaftar. Silakan masuk.',
+      text: 'Anda telah berhasil mendaftar.',
       icon: 'success',
       confirmButtonText: 'OK'
     }).then(() => {
@@ -289,10 +289,4 @@ $result = $conn->query($sql);
     });
   <?php endif; ?>
   </script>
-
-
-
-
-
-
 </html>

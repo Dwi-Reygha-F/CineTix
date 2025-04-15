@@ -119,20 +119,7 @@ if (isset($_POST['reset_password']) && isset($_SESSION['otp_verified'])) {
           <div class="card">
             <div class="card-body text-center">
               <a href="index.php" class="logo-img d-block mb-3">
-              <model-viewer
-  src="assets/3D/ImageToStl.com_logologin.glb"
-  camera-controls
-  auto-rotate
-  rotation-per-second="30deg"
-  autoplay
-  shadow-intensity="1"
-  ar
-  scale="2 2 2"
-  orientation="0 1.5 0 0"
-  camera-target="0m 0.5m 0m"
-  camera-orbit="0deg 90deg 1.5m"
-  field-of-view="50deg">
-</model-viewer>
+              <img src="img/logologin.png" alt="" width="400">
               </a>
               <h3 class="mb-4">Lupa Password?</h3>
               <?php if (!isset($_SESSION['otp']) && !isset($_SESSION['otp_verified'])): ?>
@@ -164,7 +151,9 @@ if (isset($_POST['reset_password']) && isset($_SESSION['otp_verified'])) {
                 <button type="submit" name="reset_password" class="btn btn-danger w-100">Reset Password</button>
               </form>
               <?php endif; ?>
-             
+              <div class="mt-3">
+                  <p class="mb-0">Masuk ke akun ? <a href="authentication-login.php" class="text-primary fw-bold">Login</a></p>
+                </div>
             
               </div>
             </div>
@@ -184,7 +173,7 @@ if (isset($_POST['reset_password']) && isset($_SESSION['otp_verified'])) {
         icon: "<?= $alert_type ?>",
         confirmButtonText: "OK"
       }).then(() => {
-        window.location.href = 'authentication-login.php';
+        window.location.href = 'authentication-forget.php';
       });
     <?php endif; ?>
   </script>
